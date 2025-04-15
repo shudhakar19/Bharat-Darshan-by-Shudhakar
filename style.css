@@ -1,0 +1,178 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: linear-gradient(180deg, #fc5203,#ffffff,#106e1e);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.main-header a {
+  color: #130c94;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bolder;
+}
+
+.main-header a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bolder;
+  color: #130c94;
+}
+
+/* Hero */
+.hero-section {
+  padding: 140px 20px 60px;
+  text-align: center;
+  background: linear-gradient(to bottom, #004d40, #00695c);
+  color: #fff;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 20px;
+}
+
+/* Categories */
+.category-section {
+  padding: 50px 20px 20px;
+}
+
+.category-section h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #004d40;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.state-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  transition: 0.4s;
+}
+
+.state-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.card-content a {
+  display: inline-block;
+  padding: 8px 50px;
+  background: #004d40;
+  color: #fff;
+  border-radius: 50px 50px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card-content a:hover {
+ background-color: sandybrown;
+  border-radius: 0px 50px;
+}
+
+.state-card:hover {
+  transform: scale(1.03);
+}
+
+/* Footer */
+.main-footer {
+  padding: 20px;
+  background: #004d40;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.main-footer a {
+  color: #ffd54f;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.main-footer a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .state-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  .footer {
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+
+
+
+
